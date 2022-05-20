@@ -4,4 +4,4 @@ helpers/__pycache__
 app/views/__pycache__
 .DS_Store
 __pycache__
-app/movies_base.db
+movies_base.db
