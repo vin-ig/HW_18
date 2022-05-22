@@ -1,9 +1,6 @@
-from app.dao.model.director import Director
-from app.dao.model.genre import Genre
 from app.dao.model.movie import Movie
 
 # Запрос для формирования корректного вывода фильмов
-
 QUERY = (
 	Movie.id,
 	Movie.title,
