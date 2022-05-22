@@ -6,10 +6,10 @@ class MovieService:
 		self.dao = dao
 
 	def get_one(self, uid):
-		return self.dao.get_one(uid)
+		return self.dao.get_one_join(uid)
 
-	def get_all(self):
-		return self.dao.get_all()
+	def get_all(self, filter, value):
+		return self.dao.get_all(filter, value)
 
 	def create(self, data):
 		return self.dao.create(data)
@@ -28,6 +28,7 @@ class MovieService:
 		self.dao.update(movie)
 
 	def patch(self, data):
+		"""Частичное обновление выполняется, в том числе, в методе update"""
 		pass
 
 	def delete(self, uid):

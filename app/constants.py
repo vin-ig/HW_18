@@ -11,8 +11,8 @@ QUERY = (
 	Movie.trailer,
 	Movie.year,
 	Movie.rating,
-	Director.name.label('director'),
-	Genre.name.label('genre')
+	# Director.name.label('director'),
+	# Genre.name.label('genre')
 )
 
 # Допустимые ключи для проверки
